@@ -1,3 +1,7 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .navbar{
     font-size: larger;
     display: flex;
@@ -62,7 +66,7 @@ li {
 /*PÁGINA ORÇAMENTO*/
 .jumbotron {
     margin-top: 0;
-    text-align: justify;
+    text-align: center;
 }
 
 .cad{   
@@ -72,7 +76,7 @@ li {
     width: 45%;
     height: 100%;    
     position: relative;
-    left: 25%; 
+    left: 27%; 
 }
 .cad .cad-lead{
     margin-top: 20px;
@@ -165,7 +169,9 @@ li {
 }
 
 /* PÁGINA DE CONTATO */
-
+.card-cont{
+    text-align: center;
+}
 
 .form{
     width: 45%;
@@ -174,14 +180,12 @@ li {
     box-shadow: 0 10px 20px rgba(0,0,0,.1);
     border-radius: 10px;    
     position: relative;
-    left: 25%; 
+    left: 27%; 
 }
 
 .form-cont{
-    margin-top: 20px;
     margin-left: 50px;
     margin-right: 50px;
-    padding-top: 20px;
     padding-left: 25px;    
     padding-right: 25px; 
 }
@@ -260,7 +264,7 @@ form p{
     font-size: larger;
     color: #212529;
 }
-h1{
+.form h1{
     color: #212529;
 }
 
