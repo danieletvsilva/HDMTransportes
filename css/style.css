@@ -158,3 +158,20 @@ li {
     display: flex;
     justify-content: space-around;
 }
+
+/* PÁGINA DE CONTATO */
+.card-cont{
+    text-align: center;
+}
+
+.form{
+    width: 30%;
+    margin-left: 35%;
+}
+.form-area{
+    width: 25%;
+}
+
+.form-group label{
+    font-weight: bold;
+}
