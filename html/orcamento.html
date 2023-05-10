@@ -1,222 +1,215 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-    
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
 
-    <title>Orçamento</title>
-  </head>
-  <body>
-    <!-- NavBar -->
-    <nav
-      class="navbar col-12 navbar-expand-lg navbar navbar-dark" id="navbar"
-      style="background-color: #0069c3;">
-      <div class="nav1">
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+  <script>
+    function alertaMensagem() {
+      alert("Sua mensagem foi enviada")
+    }
+  </script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <title>Orçamento</title>
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav class="navbar col-12 navbar-expand-lg navbar navbar-dark" id="navbar" style="background-color: #0069c3;">
+    <div class="nav1">
       <img class="logo" src="../img/logo.png" alt="Logo HDM Transportes">
       <a class="navbar-brand" href="../html/index.html">HDM Transportes</a>
     </div>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Alterna navegação"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="../html/index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../html/produtos.html">Serviços</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../html/orcamento.html">Orçamento</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Saiba mais
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="../html/quemSomos.html"
-                >Quem somos nós</a
-              >
-              <a class="dropdown-item" href="../html/contato.html">Contato</a>
-              <a class="dropdown-item" href="../html/filiais.html">Filiais</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav> 
-    
-    <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-4 text-center">FAÇA SEU ORÇAMENTO CONOSCO!</h1><br>
-          <p class="lead" >
-            Bem-vindo à página de orçamentos da HDM Transportes! Estamos animados em fornecer a você informações 
-            importantes sobre nossos serviços e como podemos ajudar sua empresa a se mover com segurança e eficiência.
-            <br>        
-            Nosso processo de orçamento é simples e fácil. Basta preencher os dados abaixo e em breve um de nossos especialistas 
-            entrará em contato com você para discutir as opções disponíveis e fornecer um orçamento claro e transparente.            
-            </p>
-        </div>
-    </div>    
- 
-    <!-- Formulário Web To Lead -->
-    <div class="cad">
-        
-        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../html/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/produtos.html">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/orcamento.html">Orçamento</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Saiba mais
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="../html/quemSomos.html">Quem somos nós</a>
+            <a class="dropdown-item" href="../html/contato.html">Contato</a>
+            <a class="dropdown-item" href="../html/filiais.html">Filiais</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-        <input type=hidden name="oid" value="00DDp0000016yld">
-        <input type=hidden name="retURL" value="http://">
-        
-        <!--  ----------------------------------------------------------------------  -->
-        <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
-        <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
-        <!--  <input type="hidden" name="debug" value=1>                              -->
-        <!--  <input type="hidden" name="debugEmail"                                  -->
-        <!--  value="grupo10.soulcode@gmail.com">                                     -->
-        <!--  ----------------------------------------------------------------------  -->
-        <div class="cad-lead">
-        
-            <label for="first_name">Nome</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text"  required="true"/><br>
-            
-            <label for="last_name">Sobrenome</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required="true"/><br>
-            
-            <label for="company">Empresa</label><input  id="company" maxlength="40" name="company" size="20" type="text" required="true"/><br>
-
-            <label for="cnpj">CNPJ</label><input  id="00NDp000006hWUr" maxlength="14" name="00NDp000006hWUr" size="20" type="text" required="true"/><br>
-            
-            <label for="phone">Telefone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" required="true"/><br>
-
-            <label for="mobile">Celular</label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text" required="true"/><br>
-            
-            <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" required="true"/><br>    
-            
-            <label for="regiao">Região</label>
-            <br><select  id="00NDp000006hjSR" name="00NDp000006hjSR" title="Região" required="true"><option value="">-- Nenhum --</option><option value="Norte (N)">Norte (N)</option>
-                <option value="Nordeste (NE)">Nordeste (NE)</option>
-                <option value="Centro-Oeste (CO)">Centro-Oeste (CO)</option>
-                <option value="Sudeste (SU)">Sudeste (SU)</option>
-                <option value="Sul (S)">Sul (S)</option>
-                </select><br>
-
-                <label for="estado">Estado</label>
-                <br><select  id="00NDp000006hjbu" name="00NDp000006hjbu" title="Estado" required="true"><option value="">-- Nenhum --</option><option value="Acre (AC)">Acre (AC)</option>
-                <option value="Alagoas (AL)">Alagoas (AL)</option>
-                <option value="Amapá (AP)">Amapá (AP)</option>
-                <option value="Amazonas (AM)">Amazonas (AM)</option>
-                <option value="Bahia (BA)">Bahia (BA)</option>
-                <option value="Ceará (CE)">Ceará (CE)</option>
-                <option value="Distrito Federal (DF)">Distrito Federal (DF)</option>
-                <option value="Espírito Santo (ES)">Espírito Santo (ES)</option>
-                <option value="Goiás (GO)">Goiás (GO)</option>
-                <option value="Maranhão (MA)">Maranhão (MA)</option>
-                <option value="Mato Grosso (MT)">Mato Grosso (MT)</option>
-                <option value="Mato Grosso do Sul (MS)">Mato Grosso do Sul (MS)</option>
-                <option value="Minas Gerais (MG)">Minas Gerais (MG)</option>
-                <option value="Pará (PA)">Pará (PA)</option>
-                <option value="Paraíba (PB)">Paraíba (PB)</option>
-                <option value="Paraná (PR)">Paraná (PR)</option>
-                <option value="Pernambuco (PE)">Pernambuco (PE)</option>
-                <option value="Piauí (PI)">Piauí (PI)</option>
-                <option value="Rio de Janeiro (RJ)">Rio de Janeiro (RJ)</option>
-                <option value="Rio Grande do Norte (RN)">Rio Grande do Norte (RN)</option>
-                <option value="Rio Grande do Sul (RS)">Rio Grande do Sul (RS)</option>
-                <option value="Rondônia (RO)">Rondônia (RO)</option>
-                <option value="Roraima (RR)">Roraima (RR)</option>
-                <option value="Santa Catarina (SC)">Santa Catarina (SC)</option>
-                <option value="São Paulo (SP)">São Paulo (SP)</option>
-                <option value="Sergipe (SE)">Sergipe (SE)</option>
-                <option value="Tocantins (TO)">Tocantins (TO)</option>
-                </select><br>
-            
-            <label for="lead_source" style="display:none;">Origem do lead</label>
-            <select id="lead_source" name="lead_source">
-            <option value="Web">Web</option>
-            </select><br>
-                
-            <input id="00NDp000006hFHc" name="00NDp000006hFHc" type="hidden" value="Novo" title="Fase" style="display:none;">
-            <br>   
-            <p>Obrigado pelo seu interesse! Entraremos em contato em breve. Por favor, escolha a melhor forma de contato:</p><br>
-            <label for="formcontato" >Forma de Contato</label>
-            <select  id="00NDp000006hqXk" name="00NDp000006hqXk" title="Forma de Contato" required="true">
-            <option value="Email">Email</option>
-            <option value="Telefone">Telefone</option>
-            </select><br>
-            <br>
-            <input type="submit" name="submit">
-            <br>
-        </div>
-    </form>  
-</div>  
-   <br>
-    <!-- Footer --> 
-<footer class="bg-dark text-center text-white">
-  <!-- Grid container -->
-  <div class="container p-4">
-    <!-- Section: Social media -->
-    <section class="icon">
-      <!-- Facebook -->
-      <a href="www.facebook.com"><img src="../img/facebook.png" alt="Ícone Facebook"></a>
-     
-      <!-- Twitter -->
-      <a href="www.twitter.com"> <img src="../img/twitter.png" alt="Ícone Twitter"></a>
-
-      <!-- Google -->
-      <a href="www.google.com"><img src="../img/google.png" alt="Ícone Google">      
-      </a>
-
-      <!-- Instagram -->
-      <a href="www.instagram.com"> <img src="../img/instagram.png" alt="Ícone Instagram"></a>
-
-      <!-- Linkedin -->
-      <a href="www.linkedin.com"><img src="../img/linkedin.png" alt="Ícone LinkedIn"></i
-      ></a>     
-      <!-- Whatsapp -->
-      <a href="https://web.whatsapp.com/"><img src="../img/whatsapp.png" alt="Ícone LinkedIn"></i
-        ></a> 
-    </section>
-    <br>
-
-    <!-- Section: Text -->
-    <section class="mb-4">
-      <p>
-        A HDM Transportes é líder no mercado de transportes de cargas secas e combustíveis. Temos como lema: <br>
-        <strong>"Confiabilidade e comprometimento em cada entrega."</strong>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4 text-center">FAÇA SEU ORÇAMENTO CONOSCO!</h1><br>
+      <p class="lead">
+        Bem-vindo à página de orçamentos da HDM Transportes! Estamos animados em fornecer a você informações
+        importantes sobre nossos serviços e como podemos ajudar sua empresa a se mover com segurança e eficiência.
+        <br>
+        Nosso processo de orçamento é simples e fácil. Basta preencher os dados abaixo e em breve um de nossos
+        especialistas
+        entrará em contato com você para discutir as opções disponíveis e fornecer um orçamento claro e transparente.
       </p>
-    </section>
-  
-    <section class="link">
-      <!--Grid row-->
-      <div class="row ">   <!--Grid column-->     
+    </div>
+  </div>
+
+  <!-- Formulário Web To Lead -->
+  <div class="cad">
+
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+      <input type=hidden name="oid" value="00DDp0000016yld">
+      <input type=hidden name="retURL" value="http://127.0.0.1:5500/html/index.html">
+
+      <!--  ----------------------------------------------------------------------  -->
+      <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+      <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+      <!--  <input type="hidden" name="debug" value=1>                              -->
+      <!--  <input type="hidden" name="debugEmail"                                  -->
+      <!--  value="grupo10.soulcode@gmail.com">                                     -->
+      <!--  ----------------------------------------------------------------------  -->
+      <div class="cad-lead">
+
+        <label for="first_name">Nome</label><input id="first_name" maxlength="40" name="first_name" size="20"
+          type="text" required="true" /><br>
+
+        <label for="last_name">Sobrenome</label><input id="last_name" maxlength="80" name="last_name" size="20"
+          type="text" required="true" /><br>
+
+        <label for="company">Empresa</label><input id="company" maxlength="40" name="company" size="20" type="text"
+          required="true" /><br>
+
+        <label for="cnpj">CNPJ</label><input id="00NDp000006hWUr" maxlength="14" name="00NDp000006hWUr" size="20"
+          type="text" required="true" /><br>
+
+        <label for="phone">Telefone</label><input id="phone" maxlength="40" name="phone" size="20" type="text"
+          required="true" /><br>
+
+        <label for="mobile">Celular</label><input id="mobile" maxlength="40" name="mobile" size="20" type="text"
+          required="true" /><br>
+
+        <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text"
+          required="true" /><br>
+
+        <label for="regiao">Região</label>
+        <br><select id="00NDp000006hjSR" name="00NDp000006hjSR" title="Região" required="true">
+          <option value="">-- Nenhum --</option>
+          <option value="Norte (N)">Norte (N)</option>
+          <option value="Nordeste (NE)">Nordeste (NE)</option>
+          <option value="Centro-Oeste (CO)">Centro-Oeste (CO)</option>
+          <option value="Sudeste (SU)">Sudeste (SU)</option>
+          <option value="Sul (S)">Sul (S)</option>
+        </select><br>
+
+        <label for="estado">Estado</label>
+        <br><select id="00NDp000006hjbu" name="00NDp000006hjbu" title="Estado" required="true">
+          <option value="">-- Nenhum --</option>
+          <option value="Acre (AC)">Acre (AC)</option>
+          <option value="Alagoas (AL)">Alagoas (AL)</option>
+          <option value="Amapá (AP)">Amapá (AP)</option>
+          <option value="Amazonas (AM)">Amazonas (AM)</option>
+          <option value="Bahia (BA)">Bahia (BA)</option>
+          <option value="Ceará (CE)">Ceará (CE)</option>
+          <option value="Distrito Federal (DF)">Distrito Federal (DF)</option>
+          <option value="Espírito Santo (ES)">Espírito Santo (ES)</option>
+          <option value="Goiás (GO)">Goiás (GO)</option>
+          <option value="Maranhão (MA)">Maranhão (MA)</option>
+          <option value="Mato Grosso (MT)">Mato Grosso (MT)</option>
+          <option value="Mato Grosso do Sul (MS)">Mato Grosso do Sul (MS)</option>
+          <option value="Minas Gerais (MG)">Minas Gerais (MG)</option>
+          <option value="Pará (PA)">Pará (PA)</option>
+          <option value="Paraíba (PB)">Paraíba (PB)</option>
+          <option value="Paraná (PR)">Paraná (PR)</option>
+          <option value="Pernambuco (PE)">Pernambuco (PE)</option>
+          <option value="Piauí (PI)">Piauí (PI)</option>
+          <option value="Rio de Janeiro (RJ)">Rio de Janeiro (RJ)</option>
+          <option value="Rio Grande do Norte (RN)">Rio Grande do Norte (RN)</option>
+          <option value="Rio Grande do Sul (RS)">Rio Grande do Sul (RS)</option>
+          <option value="Rondônia (RO)">Rondônia (RO)</option>
+          <option value="Roraima (RR)">Roraima (RR)</option>
+          <option value="Santa Catarina (SC)">Santa Catarina (SC)</option>
+          <option value="São Paulo (SP)">São Paulo (SP)</option>
+          <option value="Sergipe (SE)">Sergipe (SE)</option>
+          <option value="Tocantins (TO)">Tocantins (TO)</option>
+        </select><br>
+
+        <label for="lead_source" style="display:none;">Origem do lead</label>
+        <select id="lead_source" name="lead_source">
+          <option value="Web">Web</option>
+        </select><br>
+
+        <input id="00NDp000006hFHc" name="00NDp000006hFHc" type="hidden" value="Novo" title="Fase"
+          style="display:none;">
+        <br>
+        <p>Obrigado pelo seu interesse! Entraremos em contato em breve. Por favor, escolha a melhor forma de contato:
+        </p><br>
+        <label for="formcontato">Forma de Contato</label>
+        <select id="00NDp000006hqXk" name="00NDp000006hqXk" title="Forma de Contato" required="true">
+          <option value="Email">Email</option>
+          <option value="Telefone">Telefone</option>
+        </select><br>
+        <br>
+        <input type="submit" name="submit" onclick="alertaMensagem()">
+        <br>
+      </div>
+    </form>
+  </div>
+  <br>
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="icon">
+        <!-- Facebook -->
+        <a href="www.facebook.com"><img src="../img/facebook.png" alt="Ícone Facebook"></a>
+
+        <!-- Twitter -->
+        <a href="www.twitter.com"> <img src="../img/twitter.png" alt="Ícone Twitter"></a>
+
+        <!-- Google -->
+        <a href="www.google.com"><img src="../img/google.png" alt="Ícone Google">
+        </a>
+
+        <!-- Instagram -->
+        <a href="www.instagram.com"> <img src="../img/instagram.png" alt="Ícone Instagram"></a>
+
+        <!-- Linkedin -->
+        <a href="www.linkedin.com"><img src="../img/linkedin.png" alt="Ícone LinkedIn"></i></a>
+        <!-- Whatsapp -->
+        <a href="https://web.whatsapp.com/"><img src="../img/whatsapp.png" alt="Ícone LinkedIn"></i></a>
+      </section>
+      <br>
+
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          A HDM Transportes é líder no mercado de transportes de cargas secas e combustíveis. Temos como lema: <br>
+          <strong>"Confiabilidade e comprometimento em cada entrega."</strong>
+        </p>
+      </section>
+
+      <section class="link">
+        <!--Grid row-->
+        <div class="row "> <!--Grid column-->
           <ul>
             <li>
               <a href="../html/produtos.html" class="text-white">Serviços</a>
@@ -233,31 +226,26 @@
             <li>
               <a href="../html/filiais.html" class="text-white">Filiais</a>
             </li>
-          </ul>        
-      </div>
-    </section>
-  </div>
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgb(124, 112, 107);">
-    HDMTransportes© 2023 
-  </div>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgb(124, 112, 107);">
+      HDMTransportes© 2023
+    </div>
 
-</footer>
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </footer>
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
