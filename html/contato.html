@@ -6,13 +6,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/style.css" />
 
-    <title>Serviços</title>
+    <title>Contato</title>
     <script>
         function alertaMensagem1() {
             alert("Sua mensagem foi enviada")
@@ -24,7 +25,7 @@
     <!-- NavBar -->
     <nav class="navbar col-12 navbar-expand-lg navbar navbar-dark" id="navbar" style="background-color: #0069c3;">
         <div class="nav1">
-            <a href="../html/index.html"> <img class="logo" src="../img/logo.png" alt="Logo HDM Transportes"></a> 
+            <a href="../html/index.html"> <img class="logo" src="../img/logo.png" alt="Logo HDM Transportes"></a>
             <a class="navbar-brand" href="../html/index.html">HDM Transportes</a>
         </div>
 
@@ -60,7 +61,7 @@
 
     <!-- CONTATO -->
 
-    <div class="card-cont">
+    <div class="card-cont"><br>
         <h1>Siga nossas redes sociais</h1>
         <div class="icon">
             <!-- Facebook -->
@@ -82,108 +83,130 @@
             <a href="https://web.whatsapp.com/"><img src="../img/whatsapp.png" alt="Ícone LinkedIn"></i></a>
         </div>
         <br><br>
-        <h1>Ou mande uma mensagem!</h1><br>
+
         <div class="form">
-            <form>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Nome</label>
-                    <input type="nome" class="form-control" id="nome">
+
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+                <h1 class="cont-text">Entre em contato conosco</h1><br>
+                <div class="form-cont">
+                    <input type=hidden name="orgid" value="00DDp0000016yld">
+                    <input type=hidden name="retURL" value="http://">
+
+                    <!--  ----------------------------------------------------------------------  -->
+                    <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+                    <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+                    <!--  <input type="hidden" name="debug" value=1>                              -->
+                    <!--  <input type="hidden" name="debugEmail"                                  -->
+                    <!--  value="grupo10.soulcode@gmail.com">                                     -->
+                    <!--  ----------------------------------------------------------------------  -->
+
+                    <label for="name">Nome do contato</label><br><input id="name" maxlength="80" name="name" size="20"
+                        type="text" required="true" /><br>
+
+                    <label for="email">Email</label><br><input id="email" maxlength="80" name="email" size="20"
+                        type="text" required="true" /><br>
+
+                    <label for="phone">Telefone</label><br><input id="phone" maxlength="40" name="phone" size="20"
+                        type="text" required="true" /><br>
+
+                    <label for="subject">Assunto</label><br><input id="subject" maxlength="80" name="subject" size="20"
+                        type="text" required="true" /><br>
+
+                    <label for="description">Descrição</label><br><textarea name="description"
+                        required="true"></textarea><br>
+
+                    <input type="hidden" id="external" name="external" value="1" /><br><br>
+
+                    <p>Entraremos em contato em breve. <br>
+                        Por favor, escolha a melhor forma de contato:</p><br>
+                    <label for="subject">Forma de Contato</label>
+                    <select id="00NDp000006hqY9" name="00NDp000006hqY9" title="Forma de Contato" required="true">
+                        <option value="Email">Email</option>
+                        <option value="Telefone">Telefone</option>
+                    </select>
+                    <br><br>
+
+                    <input type="submit" name="submit">
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Telefone</label>
-                    <input type="telefone" class="form-control" id="telefone" placeholder="(xx)xxxx-xxxx">
-                </div>
-        </div>
-
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Mensagem</label><br>
-            <textarea class="form-area" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button type="button" class="btn btn-primary" onclick="alertaMensagem1()">ENVIAR</button>
-        </form>
-        <br>
-        <br>
-
-    </div>
-
-
-
-    <!-- Footer -->
-    <footer class="bg-dark text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4">
-            <!-- Section: Social media -->
-            <section class="icon">
-                <!-- Facebook -->
-                <a href="www.facebook.com"><img src="../img/facebook.png" alt="Ícone Facebook"></a>
-
-                <!-- Twitter -->
-                <a href="www.twitter.com"> <img src="../img/twitter.png" alt="Ícone Twitter"></a>
-
-                <!-- Google -->
-                <a href="www.google.com"><img src="../img/google.png" alt="Ícone Google">
-                </a>
-
-                <!-- Instagram -->
-                <a href="www.instagram.com"> <img src="../img/instagram.png" alt="Ícone Instagram"></a>
-
-                <!-- Linkedin -->
-                <a href="www.linkedin.com"><img src="../img/linkedin.png" alt="Ícone LinkedIn"></i></a>
-                <!-- Whatsapp -->
-                <a href="https://web.whatsapp.com/"><img src="../img/whatsapp.png" alt="Ícone LinkedIn"></i></a>
-            </section>
+            </form>
             <br>
-
-            <!-- Section: Text -->
-            <section class="mb-4">
-                <p>
-                    A HDM Transportes é líder no mercado de transportes de cargas secas e combustíveis. Temos como lema:
-                    <br>
-                    <strong>"Confiabilidade e comprometimento em cada entrega."</strong>
-                </p>
-            </section>
-
-            <section class="link">
-                <div class="row ">
-                    <ul>
-                        <li>
-                            <a href="../html/produtos.html" class="text-white">Serviços</a>
-                        </li>
-                        <li>
-                            <a href="../html/orcamento.html" class="text-white">Orçamento</a>
-                        </li>
-                        <li>
-                            <a href="../html/quemSomos.html" class="text-white">Quem somos</a>
-                        </li>
-                        <li>
-                            <a href="../html/contato.html" class="text-white">Contato</a>
-                        </li>
-                        <li>
-                            <a href="../html/filiais.html" class="text-white">Filiais</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
         </div>
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgb(124, 112, 107);">
-            HDMTransportes© 2023
-        </div>
-    </footer>
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+        <br>
+
+
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!-- Section: Social media -->
+                <section class="icon">
+                    <!-- Facebook -->
+                    <a href="www.facebook.com"><img src="../img/facebook.png" alt="Ícone Facebook"></a>
+
+                    <!-- Twitter -->
+                    <a href="www.twitter.com"> <img src="../img/twitter.png" alt="Ícone Twitter"></a>
+
+                    <!-- Google -->
+                    <a href="www.google.com"><img src="../img/google.png" alt="Ícone Google">
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="www.instagram.com"> <img src="../img/instagram.png" alt="Ícone Instagram"></a>
+
+                    <!-- Linkedin -->
+                    <a href="www.linkedin.com"><img src="../img/linkedin.png" alt="Ícone LinkedIn"></i></a>
+                    <!-- Whatsapp -->
+                    <a href="https://web.whatsapp.com/"><img src="../img/whatsapp.png" alt="Ícone LinkedIn"></i></a>
+                </section>
+                <br>
+
+                <!-- Section: Text -->
+                <section class="mb-4">
+                    <p>
+                        A HDM Transportes é líder no mercado de transportes de cargas secas e combustíveis. Temos como
+                        lema:
+                        <br>
+                        <strong>"Confiabilidade e comprometimento em cada entrega."</strong>
+                    </p>
+                </section>
+
+                <section class="link">
+                    <div class="row ">
+                        <ul>
+                            <li>
+                                <a href="../html/produtos.html" class="text-white">Serviços</a>
+                            </li>
+                            <li>
+                                <a href="../html/orcamento.html" class="text-white">Orçamento</a>
+                            </li>
+                            <li>
+                                <a href="../html/quemSomos.html" class="text-white">Quem somos</a>
+                            </li>
+                            <li>
+                                <a href="../html/contato.html" class="text-white">Contato</a>
+                            </li>
+                            <li>
+                                <a href="../html/filiais.html" class="text-white">Filiais</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgb(124, 112, 107);">
+                HDMTransportes© 2023
+            </div>
+        </footer>
+        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
