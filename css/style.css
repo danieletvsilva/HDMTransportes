@@ -61,6 +61,7 @@ li {
 /*PÁGINA ORÇAMENTO*/
 .jumbotron {
     margin-top: 0;
+    text-align: justify;
 }
 
 .cad{   
@@ -151,4 +152,9 @@ li {
 
 .card-text{
     text-align: justify ;
+}
+.card-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
