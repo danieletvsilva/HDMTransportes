@@ -14,6 +14,7 @@
 .logo{
     width: 8vw;   
 }
+
 /* Carousel */
 .carousel-inner > .carousel-item > img {    
     height: 680px; 
@@ -151,7 +152,6 @@ li {
     display: none;
 }
 
-
 /* PÁGINA DE SERVIÇOS */
 .serv{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -269,7 +269,6 @@ form p{
 }
 
 
-
 /* Filiais */
 .card-img-top1{
     height: 50%;
@@ -281,4 +280,16 @@ form p{
 }
 .card-img-top2{
     height: 350px;
+}
+
+/* QUEM SOMOS */
+.card-body1{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card-body{
+    font-size: 17px;
+    font-weight: 400;
 }
