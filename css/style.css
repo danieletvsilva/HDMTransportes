@@ -152,6 +152,9 @@ li {
     display: none;
 }
 
+#priority{
+    display: none;
+}
 /* PÁGINA DE SERVIÇOS */
 .serv{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
