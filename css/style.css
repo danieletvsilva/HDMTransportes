@@ -163,7 +163,9 @@ li {
 }
 
 .card-text{
-    text-align: justify ;
+    text-align: justify;
+    font-size: 15px;
+
 }
 .card-group{
     width: 100%;
